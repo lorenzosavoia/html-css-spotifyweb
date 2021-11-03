@@ -17,19 +17,19 @@ clearfix::after{
 
 .navbar-left{
     float: left;
-    width: 20%;
+    width: 200px;
     height: 100vh;
-    background-color: red;
+    background-color: black;
 }
 .main-col{
     float: left;
-    width: 80%;
+    width: calc(100% - 200px);
     height: 100vh;
     background-color: brown;
     overflow: auto;
 }
 .header-btn{
-    width: 80%;
+    width: calc(100% - 200px);
     height: 50px;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -46,4 +46,46 @@ clearfix::after{
     left: 0;
     bottom: 0;
     z-index: 90;
+}
+
+.spotify-logo{
+    width: 80%;
+    padding: 1.5em;
+}
+
+.logo-nav {
+    width: 13%;
+    height: 13%;
+}
+.border-box{
+    border-left: solid 3px green;
+}
+
+.navbar-left ul {
+    list-style: none;
+}
+.navbar-left ul li{
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    display: flex;
+    color:#d2d2d2 ;
+
+}
+
+.navbar-left ul li a h5{
+    margin: auto 0;
+    padding-left: 0.5em;
+}
+.square-plus{
+   font-size: 2.5em;
+}
+.new-playlist {
+    color:#d2d2d2;
+    padding-left: 1.5em;
+    
 }
