@@ -15,16 +15,17 @@ clearfix::after{
     clear: both;
 }
 
+
 .navbar-left{
     float: left;
     width: 200px;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
 }
 .main-col{
     float: left;
     width: calc(100% - 200px);
-    height: 100vh;
+    /* height: 100vh; */
     background-color: brown;
     overflow: auto;
 }
@@ -47,7 +48,9 @@ clearfix::after{
     bottom: 0;
     z-index: 90;
 }
-
+.navbar-left{
+    overflow: hidden;
+}
 .spotify-logo{
     width: 80%;
     padding: 1.5em;
@@ -81,11 +84,30 @@ clearfix::after{
     margin: auto 0;
     padding-left: 0.5em;
 }
+.title-white{
+    color: white;
+    padding-left: 1.5em;
+    padding-top: 1em ;
+}
 .square-plus{
    font-size: 2.5em;
+   padding-right: 0.2em;
 }
 .new-playlist {
     color:#d2d2d2;
     padding-left: 1.5em;
+    display: flex;
+}
+.new-playlist a p{
+    margin: auto 0;
+}
+.new-playlist a{
+    padding: 0.5em 0;
+    text-decoration: none;
+    display: flex;
+    color:#d2d2d2;
+}
+.playlist-name {
+    overflow: auto;
     
 }
