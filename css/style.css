@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.navbar-left{
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: red;
+}
+.main-col{
+    float: left;
+    width: 80%;
+    height: 100vh;
+    background-color: brown;
+    overflow: auto;
+}
+.header-btn{
+    width: 80%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.nav-bot{
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+    clear: both;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 90;
+}
