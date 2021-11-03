@@ -21,49 +21,52 @@
         <div class="navbar-left">
             
             <!-- home-cerca-la tua libreria -->
-
-            <img class="spotify-logo" src="img/logo.svg" alt="logo Spotify">
-            <ul>
-                <li class="border-box">
-                    <a href="">
-                        <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                            fill="#d2d2d2" />
-                        </svg>
-                        <h5>Home</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                                fill="#d2d2d2" fill-rule="evenodd" />
-                        </svg>
-                        <h5>Cerca</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+            <div class="nav-home">
+                <img class="spotify-logo" src="img/logo.svg" alt="logo Spotify">
+                <ul>
+                    <li class="border-box">
+                        <a href="">
+                            <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
                                 fill="#d2d2d2" />
-                        </svg>
-                        <h5>La tua libreria</h5>
-                    </a>
-                </li>
-            </ul>
+                            </svg>
+                            <h5>Home</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                    fill="#d2d2d2" fill-rule="evenodd" />
+                            </svg>
+                            <h5>Cerca</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="logo-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                    fill="#d2d2d2" />
+                            </svg>
+                            <h5>La tua libreria</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!-- home-cerca-la tua libreria -->
 
             <!-- playlist -->
-
-            <h4 class="title-white">PLAYLIST</h4>
-            <div class="new-playlist">
-                <a href="">
-                    <i class="square-plus fas fa-plus-square"></i> <p>Crea playlist</p>
-                </a>
+            <div class="new-playlist-col">
+                <h4 class="title-white">PLAYLIST</h4>
+                <div class="new-playlist">
+                    <a href="">
+                        <i class="square-plus fas fa-plus-square"></i> <p>Crea playlist</p>
+                    </a>
+                </div>
             </div>
+
             <div class="playlist-name">
                 <ul>
                     <li><a href="">Nome Playlist</a></li>
@@ -78,14 +81,19 @@
 
             <!-- playlist -->
             <div class="User">
-                <p><i class="far fa-arrow-alt-circle-down"></i>installa app</p>
-                <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
-                    <title>User Icon</title>
-                    <path
-                    d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
-                    fill="#ffffff" fill-rule="evenodd" />
-                </svg>
-                <h3>Jhon Doe</h3>
+                <div class="install-app">
+                    <p><i class="far fa-arrow-alt-circle-down"></i>installa app</p>
+                </div>
+
+                <div class="user-john">
+                    <svg class="logo-nav-jhon"  viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+                        <title>User Icon</title>
+                        <path
+                        d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                        fill="#ffffff" fill-rule="evenodd" />
+                    </svg>
+                    <h3 class="title-jhon">Jhon Doe</h3>
+                </div>
             </div>
 
 
@@ -95,6 +103,26 @@
 
         </div>
         <div class="main-col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est expedita debitis doloremque aperiam veritatis sapiente suscipit laborum similique aliquam officia, itaque distinctio. Assumenda saepe temporibus repellat possimus maxime consequuntur inventore!
+            Ipsam rerum doloremque deserunt rem reiciendis velit repellendus magnam labore, atque dolore libero temporibus blanditiis delectus nihil, debitis recusandae possimus quia cupiditate ab a illum obcaecati necessitatibus tempora? Corrupti, facilis?
+            Cupiditate, quod ullam atque laboriosam omnis quisquam accusantium culpa aspernatur rem similique ab quam possimus sapiente magnam aliquam et corrupti eos debitis. Deserunt minus laudantium laborum iusto ducimus quaerat sunt.
+            Provident nihil, nam, eius placeat omnis suscipit illo, dolores voluptatem quod explicabo doloribus in ducimus nostrum sit neque quo? A laboriosam praesentium, voluptas obcaecati est hic recusandae? Itaque, soluta reprehenderit.
+            Esse dicta assumenda cum, deleniti neque quibusdam reprehenderit praesentium eligendi corrupti! Consequatur, libero, cumque illum, vitae eaque numquam vero fuga tempora unde reiciendis iure facilis dolor placeat in voluptates omnis.
+            Rem at unde ratione ut, possimus, pariatur atque iusto ex molestiae non quasi omnis hic harum ducimus reprehenderit? Officiis repellendus itaque, repellat magnam nesciunt dolores mollitia aspernatur non. Magni, nemo!
+            Corrupti distinctio, aut sunt nobis sint earum vel temporibus minus voluptatem quasi aperiam provident asperiores nisi doloremque qui cumque suscipit quia ipsa similique esse quidem est! Eius, distinctio deleniti. Nostrum.
+            Ullam amet quo alias? Eius fuga itaque praesentium, eum officia accusamus quam placeat nihil architecto rerum dolor quidem consectetur explicabo voluptatum delectus quasi autem recusandae, dolores aliquid, commodi labore aspernatur.
+            Rerum sit deserunt, veniam eum, exercitationem dignissimos vitae, similique maiores modi quam culpa cum quibusdam facilis doloremque cupiditate? Distinctio et minima tempora est laborum illum molestias eum vero. Atque, rerum.
+            Quos magnam provident explicabo quis deleniti optio distinctio ducimus. Aspernatur, exercitationem nobis saepe neque inventore earum laudantium voluptate facere minima dolorem enim iure? Iure molestias culpa, accusantium autem explicabo eveniet.
+            Reprehenderit officia fuga fugiat provident aut minima, delectus maiores totam, ex nesciunt exercitationem tempore! Adipisci quo quaerat fuga, saepe aliquid eos obcaecati nesciunt inventore sapiente esse, amet reiciendis, porro eligendi!
+            Rerum enim ducimus, quibusdam nam ipsum veritatis minima similique ipsam, quae in ipsa saepe cumque. Doloremque, dolorem? Corrupti incidunt maxime earum dolores consequuntur, ratione nulla minus nesciunt. Illo, accusantium dolor!
+            Eius culpa, perferendis impedit nulla voluptatum aspernatur dolor aut accusamus laborum voluptatem adipisci ratione tempora quaerat hic iusto necessitatibus at quo inventore praesentium velit ad cumque repellat rerum. Est, eveniet.
+            Ea earum illum mollitia, incidunt dolore sunt modi tempora. Consectetur corporis error dicta voluptatum quam iusto minima eos. Quia odit dicta consequuntur quo ullam repellat rem corrupti officia dolorum suscipit.
+            Mollitia neque quasi exercitationem, doloribus quis sequi? Adipisci in officiis accusamus rerum cum quod illo vitae. Quod sapiente totam aliquam fugiat inventore? Fugiat ipsa est dignissimos recusandae optio doloremque delectus?
+            Maxime doloremque possimus tempora doloribus impedit modi obcaecati expedita deserunt perspiciatis voluptas iusto minus quasi perferendis maiores, corporis quos, provident quidem autem quo, similique harum saepe? Aperiam quasi ipsa quam.
+            Et aut corrupti nostrum, doloremque est iste quas quam voluptatibus dolorum unde perspiciatis. Voluptatibus possimus fugit unde nobis. Quam alias inventore nulla veritatis deserunt magnam, dolorum sint repellendus voluptate iure.
+            Illo placeat quam ab tempore officiis ratione nemo perferendis vitae. Perspiciatis magni dolorem, recusandae perferendis ipsa beatae sint repellendus, nostrum distinctio in facilis aliquid possimus impedit animi, necessitatibus temporibus. Perspiciatis.
+            Accusantium explicabo, nostrum quas expedita quam eveniet nihil placeat beatae nam architecto iure vero in ipsam reiciendis. Accusamus repudiandae nemo, minima omnis, similique maiores voluptatibus quod sunt hic commodi laudantium!
+            Ea consequatur aliquid amet dicta saepe at eos perspiciatis tenetur placeat officiis maiores rerum vitae dolores, maxime corrupti libero in culpa repellat eligendi magnam ab incidunt? Id assumenda fugiat expedita?
 
         </div>
         <!-- <div class="nav-bot"></div> -->

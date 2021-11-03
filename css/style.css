@@ -17,13 +17,16 @@ clearfix::after{
 
 
 .navbar-left{
-    float: left;
+    
     width: 200px;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 .main-col{
-    float: left;
+    float: right;
     width: calc(100% - 200px);
     /* height: 100vh; */
     background-color: brown;
@@ -49,8 +52,30 @@ clearfix::after{
     z-index: 90;
 }
 .navbar-left{
-    overflow: hidden;
+    
+
 }
+/* .nav-home{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.new-playlist-col{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.playlist-name{
+    width: 100%;
+    height: 100%;
+    float: left;
+} */
+.user{
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+
 .spotify-logo{
     width: 80%;
     padding: 1.5em;
@@ -111,3 +136,24 @@ clearfix::after{
     overflow: auto;
     
 }
+.install-app{
+    color: #d2d2d2;
+    display: flex;
+    margin: 0 1.5em;
+    border-bottom: solid 1px #d2d2d2;
+    padding-bottom: 1em;
+}
+.user{
+    justify-content: flex-end;
+}
+.user-john{
+    display: flex;
+    color: white;
+    margin-left: 1.5em;
+    
+}
+.logo-nav-jhon{
+    width: 10%;
+    height: 10%;
+}
+
