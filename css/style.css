@@ -305,3 +305,130 @@ main{
 }
 
 /* footer */
+
+@media  screen and (max-width: 600px) {
+
+    .hidden{
+        display: none;
+    }
+
+    .nav-home{
+    width: 100%;   
+}
+.new-playlist-col{
+    width: 100%;
+    display: none;
+}
+.playlist-name{
+    width: 100%;
+    height: 70vh;
+    display: none;
+}
+.user{
+    width: 100%;
+}
+
+.spotify-logo{
+    width: 80%;
+    padding: 1.5em;
+    display: none;
+}
+
+.logo-nav {
+    width: 13%;
+    height: 13%;
+}
+.border-box{
+    border-left: none;
+}
+
+.navbar-left ul {
+    list-style: none;
+}
+.navbar-left ul li{
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    display: flex;
+    color:#d2d2d2 ;
+
+}
+
+.navbar-left ul li a h5{
+    margin: auto 0;
+    padding-left: 0.5em;
+}
+.title-white{
+    color: white;
+    padding-left: 1.5em;
+    padding-top: 1em ;
+}
+.square-plus{
+   font-size: 2.5em;
+   padding-right: 0.2em;
+}
+.new-playlist {
+    color:#d2d2d2;
+    padding-left: 1.5em;
+    display: flex;
+}
+.new-playlist a p{
+    margin: auto 0;
+}
+.new-playlist a{
+    padding: 0.5em 0;
+    text-decoration: none;
+    display: flex;
+    color:#d2d2d2;
+}
+.playlist-name {
+    overflow: auto;
+    
+}
+.install-app{
+    color: #d2d2d2;
+    display: flex;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 1em;
+    text-decoration: none;
+}
+.user{
+    align-self: flex-end;
+    
+}
+.margin-05{
+    margin-right: 0;
+}
+.user-john{
+    display: flex;
+    color: white;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    text-decoration: none;
+    
+}
+.logo-nav-jhon{
+    width: 13%;
+    height: 13%;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 0;
+    
+}
+
+.title-jhon{
+    font-size: 1em;
+    margin: auto 0;
+    display: none;
+
+}
+
+    
+}
