@@ -190,7 +190,7 @@ main{
 
 .footer-left{
     float: left;
-    width: 20%;
+    width: 30vw;
     min-width: 20%;
     height: 100%;
     border: solid 1px red;
@@ -215,37 +215,24 @@ main{
 }
 .footer-center{
     float: left;
-    width: 60%;
+    width: 40vw;
     height: 100%;
     border: solid 1px red;
 }
 
 
-.footer-right{
-    float: left;
-    width: 20%;
-    height: 100%;
-    border: solid 1px red;
-}
 .music-nav-bar{
     display: flex;
     width: 100%;
     height: 50%;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .music-nav-bar ul{
     list-style: none;
     display: flex;
-    margin: auto 0;
-    
-    
+    margin: auto 0; 
 }
-.music-nav-bar ul li{
-    display: inline-block;
-    
-    
-}
+
 .music-nav-bar ul li a{
     margin: 0 0.7em;
     font-size: 1.2em;   
@@ -258,11 +245,63 @@ main{
 .track-time{
     width: 100%;
     height: 50%;
+    display: flex;
+    justify-content: center; 
+}
+.track-time span{
+    margin: auto 0;
+}
+.track-time a{
+    width: 70%;
+    margin: auto 0;
 }
 
 .bar-time{
+    /* display: inline-block; */
+    height: 4px;
+    background-color:#d2d2d2 ;
+    border-radius: 3px;
+    margin: auto 1em;
+    
+}
+
+.footer-right{
+    float: left;
+    width: 30vw;
+    height: 100%;
+    border: solid 1px red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+.footer-right ul li{
+    margin: auto 0.3em;
+}
+.footer-right a{
+    width: 30%;
+    margin: auto 0;
 
 }
 
+.music-bar-2{
+    width: 40%;
+    height: 4px;
+    background-color:#040404 ;
+    border-radius: 3px;
+    margin: auto 0;
+    display: block;
+}
+.music-bar{
+    /* width: 30%; */
+    height: 4px;
+    background-color:#d2d2d2 ;
+    border-radius: 3px;
+    margin: auto 1em;
+}
 
 /* footer */
