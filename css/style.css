@@ -143,7 +143,7 @@ main{
     align-self: flex-end;
     
 }
-.far{
+.margin-05{
     margin-right: 0.5em;
 }
 .user-john{
@@ -220,11 +220,48 @@ main{
     border: solid 1px red;
 }
 
+
 .footer-right{
     float: left;
     width: 20%;
     height: 100%;
     border: solid 1px red;
+}
+.music-nav-bar{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    
+}
+.music-nav-bar ul{
+    list-style: none;
+    display: flex;
+    margin: auto 0;
+    
+    
+}
+.music-nav-bar ul li{
+    display: inline-block;
+    
+    
+}
+.music-nav-bar ul li a{
+    margin: 0 0.7em;
+    font-size: 1.2em;   
+}
+
+.fa-play-circle{
+    font-size: 1.5em;
+}
+
+.track-time{
+    width: 100%;
+    height: 50%;
+}
+
+.bar-time{
+
 }
 
 
