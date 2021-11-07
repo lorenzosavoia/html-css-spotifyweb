@@ -9,8 +9,13 @@ html{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
-clearfix::after{
+.clearfix::after{
     display: table;
     content: '';
     clear: both;
@@ -24,11 +29,31 @@ clearfix::after{
     width: calc(100% - 200px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.btn-container{
+    width: 14em;
+    text-align: center;
+}
+
+.btn-container button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.6em;
+}
+
+
 
 /* header-btn */
 
@@ -179,7 +204,9 @@ main{
 /* main */
 
 .main-col{
-    padding-top: 80px;
+    
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* lista top */
@@ -190,6 +217,7 @@ main{
     list-style: none;
     width: 70%;
     margin: 0 auto;
+    margin-top: 5em;
     flex-wrap: wrap;
     height: 80px;
 }
@@ -209,18 +237,18 @@ main{
 /* ripordotti di recente */
 
 .recently-played h2{
-    margin: 0.5em 0.5vw;
+    margin: 0.5em 0;
     color: white;
 }
 .recently-played ul{
     display: flex;
     list-style: none;
+    justify-content: space-between;
+    text-align: center;
 }
 .recently-played ul li{
-    text-align: center;
-    width: 12vw;
-    /* min-width: 200px; */
-    /* margin: 0 auto; */
+    width: calc(100% / 7);
+    
 }
 
 .recently-played ul li a{
@@ -237,8 +265,7 @@ main{
 }
 
 .img-recently-pleyed{
-    max-width: 11vw;
-    /* min-width: 100px; */
+    width: 100%;
     
 }
 
@@ -248,23 +275,26 @@ main{
 /* per jhon doe */
 
 .for-john h2{
-    margin: 0.5em 0.5vw;
+    margin: 0.5em 0;
     color: white;
 }
 .for-john span{
-    margin: 1em 0.5vw;
+    margin: 1em 0;
     font-weight: bold;
     display: block;
 }
 
 .for-john ul{
     display: flex;
+    justify-content: start;
     list-style: none;
 }
 .for-john ul li{
+    width: calc(100% / 6);
+    padding-bottom: 10px;
+    padding-right: 30px;
     text-align: center;
-    width: 12vw;
-    /* margin: 0 1.3em; */
+}
     
 }
 .for-john ul li a{
@@ -518,11 +548,46 @@ main{
 }
 
 @media screen and (max-width: 1100px) {
-    .recently-played ul:nth-child(5n){
-        flex-wrap: wrap;
+    .recently-played ul{
         
+        flex-wrap: wrap;
+        justify-content: start;
+        
+    }
+    .recently-played ul li{
+        
+        width: calc(25% - 10px);
+        margin-right: 10px;
+    }
+    .for-john ul li{
+        
+        width: calc(25%);
+        margin-right: 0;
+        padding-right: 10px;
     }
 
     
     
+}
+@media screen and (max-width:700px) {
+
+    .recently-played ul{
+        
+        flex-wrap: wrap;
+        justify-content: start;
+        
+    }
+    .recently-played ul li{
+        
+        width: calc(50% - 10px);
+        margin-right: 10px
+    }
+
+    
+    .for-john ul li{
+        
+        width: 50%;
+        padding-right: 10px; 
+        
+    }
 }
