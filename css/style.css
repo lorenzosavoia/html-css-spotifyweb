@@ -20,8 +20,48 @@ html{
     content: '';
     clear: both;
 }
+.relative{
+    position: relative;
+}
 
 /* start code */
+
+/* hover */
+.img-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.3em;
+    cursor: pointer;
+    display: none;
+}
+.overlay:hover{
+    opacity: 0.2;
+
+}
+.overlay:hover .img-play-button{
+    display: block;
+}
+
+.pointer-radius{
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    padding: 10px;
+    background-color: honeydew;
+    border-radius: 50%;
+    display: none;
+    z-index: 90;
+}
+
+
+.music-bar-2:hover .pointer-radius{
+    display: block;
+}
+
+/* hover */
 
 /* header-btn */
 
@@ -404,6 +444,7 @@ main{
     border-radius: 3px;
     margin: auto 1em;
     
+    
 }
 
 .footer-right{
@@ -436,6 +477,7 @@ main{
     border-radius: 3px;
     margin: auto 0;
     display: block;
+    
 }
 .music-bar{
     /* width: 30%; */
